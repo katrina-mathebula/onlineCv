@@ -5,7 +5,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
       <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
       <link rel="stylesheet" href="css/bootstrap.min.css">
-      <link rel="manifest" href="manifest.webmanifest">
     <title>Katrina || Home</title>
     <!-- font-awesome -->
     <link
@@ -14,6 +13,8 @@
     />
     <!-- css -->
     <link rel="stylesheet" href="./css/styles.css" />
+    <link rel="manifest" href="js/manifest.json">
+    <meta name="theme-color" content="#ffaa80">
   </head>
   <body>
     <!-- navbar -->
@@ -194,44 +195,7 @@
 
 
     <!-- end of about -->
-      
-                                
-<!--        PROGRESS BAR         -->
-                                
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-    <!-- services -->
 
-    <!-- end of services -->
-    <!-- projects -->
-
-    <!-- end of projects -->
-    <!-- connect -->
-
-    <!-- end of connect -->
-    <!-- skills -->
-
-    <!-- end of skills -->
-    <!-- timeline -->
-
-    <!--end of  timeline -->
-    <!-- blog -->
-
-    <!--end of  blog -->
-    <!-- footer -->
-      
-      
     <!-- footer -->
     <footer class="footer">
       <!-- social icons -->
@@ -256,7 +220,28 @@
       <p>&copy; <span id="date"></span> katrina. all rights reserved</p>
     </footer>
          
+<!-- The core Firebase JS SDK is always required and must be listed first -->
+<script src="https://www.gstatic.com/firebasejs/7.15.5/firebase-app.js"></script>
+<script src="https://www.gstatic.com/firebasejs/7.15.5/firebase-firestore.js"></script>      
 
+<!-- TODO: Add SDKs for Firebase products that you want to use
+     https://firebase.google.com/docs/web/setup#available-libraries -->
+
+<script>
+  // Your web app's Firebase configuration
+  var firebaseConfig = {
+    apiKey: "AIzaSyBSxramj--QVUcldnyOYDLl6GhjSBlZ2oA",
+    authDomain: "online-cv-pwa.firebaseapp.com",
+    databaseURL: "https://online-cv-pwa.firebaseio.com",
+    projectId: "online-cv-pwa",
+    storageBucket: "online-cv-pwa.appspot.com",
+    messagingSenderId: "889630598717",
+    appId: "1:889630598717:web:9385d0a16ee9366921ac54"
+  };
+  // Initialize Firebase
+  firebase.initializeApp(firebaseConfig);
+    const db = firebase.firestore();
+</script>
     <script src="./js/app.js"></script>
   </body>
 </html>
